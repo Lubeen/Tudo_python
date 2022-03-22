@@ -7,7 +7,7 @@ from functools import partial, reduce
     # return x + 2
 # soma_2 = lambda x: x + 2
 
-# Com a funcao parcial
+# Com a funcao parcial0
 soma_2 = partial(add, 2)
 mul_2 = partial(mul, 2)
 
