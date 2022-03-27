@@ -1,11 +1,5 @@
-# Abstracao
-# tipos definidos pelo usuario 
+from abstracao_de_dado import Fila
 
-
-class Fila:
-   fila = []
-
-   def entrar(self, nome):
-      self.fila.append(nome)
-    
-        
+supermercado = Fila()
+loterica = Fila()
+banco = Fila()
