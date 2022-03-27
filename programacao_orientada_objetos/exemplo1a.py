@@ -5,8 +5,7 @@
 class Fila:
    fila = []
 
-
-def entrar(self, nome):
-    self.fila.append(nome)
+   def entrar(self, nome):
+      self.fila.append(nome)
     
         
