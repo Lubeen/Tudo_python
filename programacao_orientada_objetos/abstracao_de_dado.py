@@ -12,4 +12,4 @@ class Fila: # nos temos uma classe que representa um molde de todos os passaros,
         self.fila.append(nome)    
 
     def sair(self):#esses metodos recebem parametros que sao suas difinicoes, porem preciso declarar que a funcao recebe ela mesma para que o sistema entenda que se trata de uma funcao dela mesma
-        self.fila.pop(0)
+        self.fila.pop(0) 
