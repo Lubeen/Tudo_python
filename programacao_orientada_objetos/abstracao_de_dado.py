@@ -1,5 +1,10 @@
 # Abstracao
-# tipos definidos pelo usuario 
+# tipos definidos pelo usuario, a POO utiliza tipos de dados personalizados, em vez de trabalhar com dados
+#primitivos podemos criar novos tipos de dados, baseia-se no conceito de objetos
+#POO -> Programacao Orientada a Objetos
+#Vantagens da OO: 
+#Fornece uma estrutura modular para a construção de programas, o Sofwtare se torna mais facil de manter, Reuso de codigo -> desenvolvimento mais rapido,
+#Objetos podem ser reutilizados em aplicacoes diferentes, Encapsulamento não é necessario conhecer a implementacao interna de um objeto para poder usa-lo
 
 
 class Fila: # nos temos uma classe que representa um molde de todos os passaros, o motivo da primeira letra ser maiscula em classe é por causa das boas praticas do python
