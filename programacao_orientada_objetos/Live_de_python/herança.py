@@ -1,6 +1,6 @@
 #ABstracao da abstracao para reutilizar codigo
 # Herdando pizzas
-from exemplo2 import Pizza #pai
+from Live_de_python.exemplo2 import Pizza #pai
 
 class Mussarela(Pizza):#filho, herdou
     ...
