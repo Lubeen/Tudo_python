@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String, ForeignKey,delete, update
+from db_alchemy_orm import create_engine, MetaData, Table, Column, Integer, String, ForeignKey,delete, update
 
 #sqlalchemy com core
 

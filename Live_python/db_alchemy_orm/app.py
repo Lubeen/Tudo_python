@@ -1,12 +1,12 @@
-import sqlalchemy
-from sqlalchemy import Column, Integer, String
+from SqlAlchemy import sqlalchemy
+from SqlAlchemy import Column, Integer, String
 
 #Conectando ao banco de dados, engine = ferramenta de conexao com o banco de dados
 engine = sqlalchemy.create_engine('sqlite:///enterprise.db', echo=True)
 
 #Declarando o mapeamento entre o objeto python e o banco de dados, ou seja a partir do declarative base, 
 # ja podemos criar nosso objeto com ligação ao banco de dados
-from sqlalchemy.orm import declarative_base
+from SqlAlchemy import declarative_base
 Base = declarative_base()
 
 class User(Base):#Utilizamos o base para criar nossa classe
@@ -34,7 +34,7 @@ user = User(name='ed', fullname='Ed Jones', password='edspassword')
 
 #Para fazer a adição primeiro precisamos da sessao 
 #Criar uma sessao
-from sqlalchemy.orm import sessionmaker 
+from SqlAlchemy import sessionmaker 
 
 Session = sessionmaker(bind=engine)
 session = Session()

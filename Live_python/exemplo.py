@@ -12,8 +12,6 @@ from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
 
-
-
 class User(Base):
     __tablename__ = 'users'
 
@@ -26,18 +24,14 @@ class User(Base):
 #A engine é super importante para a conexão com o banco de dados, pois ela é quem vai conectar o banco de dados com o endereço 
 
 # e  temos a sessão que é quem vai fazer a chamada da engine, podemos ter varias sessoes
-
 '''
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
 
-
-
 class User(Base):
     __tablename__ = 'users'
-
 
     id = Column(Integer, primary_key=True)
     name = Column(String(50))
