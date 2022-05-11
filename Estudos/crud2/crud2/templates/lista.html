@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Clientes </title>
+</head>
+<body>
+    <h1>Lista de Clientes </h1>
+    <hr>
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td>Idade</td>
+            <td>CPF</td>
+            <td>Excluir</td>
+            <td>Editar</td>
+        </tr>
+        {% for pessoa in pessoas %}
+        <tr>
+            <td>{{ pessoa.nome }}</td>
+            <td>{{ pessoa.idade }}</td>
+            <td>{{ pessoa.cpf }}</td>
+            <td>
+                <a href="{{ url_for('excluir_usuario', id=pessoa.id)}}">X</a>
+            </td>
+            <td>
+                <a href="{{ url_for('editar_usuario', id=pessoa.id)}}">E</a>
+            </td>
+
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/index">Voltar</a>
+    
+</body>
+</html>
